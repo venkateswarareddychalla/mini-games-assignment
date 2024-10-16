@@ -1,0 +1,333 @@
+/* .cardFlipRules-main-container {
+  padding: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  min-height: 100vh;
+  background: #1a202c;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .cardFlipRules-main-container {
+    padding: 50px;
+  }
+}
+.cardFLip-leftArrow-backPara-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+@media (min-width: 768px) {
+}
+.cardFLip-back-button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding-top: 6px;
+}
+@media (min-width: 768px) {
+  .cardFLip-back-button {
+  }
+}
+.cardFLip-back-para {
+  font-family: Bree Serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #ffffff;
+}
+@media (min-width: 768px) {
+  .cardFLip-back-para {
+    font-size: 24px;
+  }
+}
+.cardFLip-card-container {
+  background: transparent;
+  padding: 20px;
+}
+@media (min-width: 768px) {
+  .cardFLip-card-container {
+    padding: 30px;
+    border-radius: 12px;
+  }
+}
+.cardFLipImage-cardFLipGameHeading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 768px) {
+}
+.cardFLip-image {
+  height: 150px;
+  width: 230px;
+  margin-top: 10px;
+}
+@media (min-width: 768px) {
+  .cardFLip-image {
+    height: 200px;
+    width: 300px;
+    margin-top: 30px;
+  }
+}
+.cardFLip-game-heading {
+  color: #ffffff;
+  font-family: Bree Serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: center;
+  word-spacing: 10px;
+}
+@media (min-width: 768px) {
+  .cardFLip-game-heading {
+    font-size: 44px;
+  }
+}
+.cardFLip-rulesHeading-ul-container {
+  padding: 15px;
+}
+@media (min-width: 768px) {
+  .cardFLip-rulesHeading-ul-container {
+    padding: 30px;
+  }
+}
+.cardFLip-rules-heading {
+  font-family: Bree Serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+@media (min-width: 768px) {
+  .cardFLip-rules-heading {
+    font-size: 36px;
+  }
+}
+.cardFLip-rules-ul-container {
+  padding: 0px;
+}
+@media (min-width: 768px) {
+}
+.cardFLip-rules-list-item {
+  list-style: disc;
+
+  color: #ffffff;
+  margin-bottom: 10px;
+
+  font-family: Bree Serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
+@media (min-width: 768px) {
+  .cardFLip-rules-list-item {
+    font-size: 24px;
+    margin-bottom: 20px;
+    line-height: 32px;
+  }
+}
+.cardFLip-start-play-btn-container {
+  text-align: center;
+  margin-top: 20px;
+}
+@media (min-width: 768px) {
+  .cardFLip-start-play-btn-container {
+    margin-top: 30px;
+  }
+}
+.cardFLip-start-playing-button {
+  color: #ffffff;
+  background-color: #467aff;
+  border-radius: 8px;
+  height: 35px;
+  width: 100px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  font-family: Bree Serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  margin-top: 10px;
+}
+@media (min-width: 768px) {
+  .cardFLip-start-playing-button {
+    font-size: 18px;
+    height: 50px;
+    width: 150px;
+  }
+} */
+
+.cardFlipRules-main-container {
+  padding: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  min-height: 100vh;
+  background: #14332E;
+}
+@media (min-width: 768px) {
+  .cardFlipRules-main-container {
+    padding: 50px;
+  }
+}
+.cardFlip-leftArrow-backPara-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+@media (min-width: 768px) {
+}
+.cardFlip-back-button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding-top: 6px;
+}
+@media (min-width: 768px) {
+  .cardFlip-back-button {
+  }
+}
+.cardFlip-back-para {
+  font-family: Bree Serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #ffffff;
+}
+@media (min-width: 768px) {
+  .cardFlip-back-para {
+    font-size: 24px;
+  }
+}
+.cardFlip-card-container {
+  background: transparent;
+  /* padding: 20px; */
+}
+@media (min-width: 768px) {
+  .cardFlip-card-container {
+    padding: 30px;
+    border-radius: 12px;
+  }
+}
+.cardFlipImage-cardFlipGameHeading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 768px) {
+}
+.cardFlip-image {
+  height: 150px;
+  width: 230px;
+  margin-top: 10px;
+}
+@media (min-width: 768px) {
+  .cardFlip-image {
+    height: 200px;
+    width: 300px;
+    margin-top: 30px;
+  }
+}
+.cardFlip-game-heading {
+  color: #ffffff;
+  font-family: Bree Serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: center;
+  word-spacing: 10px;
+}
+@media (min-width: 768px) {
+  .cardFlip-game-heading {
+    font-size: 44px;
+  }
+}
+.cardFlip-rulesHeading-ul-container {
+  padding: 15px;
+}
+@media (min-width: 768px) {
+  .cardFlip-rulesHeading-ul-container {
+    padding: 30px;
+  }
+}
+.cardFlip-rules-heading {
+  font-family: Bree Serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+@media (min-width: 768px) {
+  .cardFlip-rules-heading {
+    font-size: 36px;
+  }
+}
+.cardFlip-rules-ul-container {
+  padding: 0px;
+}
+@media (min-width: 768px) {
+}
+.cardFlip-rules-list-item {
+  list-style: disc;
+
+  color: #ffffff;
+  margin-bottom: 10px;
+
+  font-family: Bree Serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
+@media (min-width: 768px) {
+  .cardFlip-rules-list-item {
+    font-size: 24px;
+    margin-bottom: 20px;
+    line-height: 32px;
+  }
+}
+.cardFlip-start-play-btn-container {
+  text-align: center;
+  margin-top: 20px;
+}
+@media (min-width: 768px) {
+  .cardFlip-start-play-btn-container {
+    margin-top: 30px;
+  }
+}
+.cardFlip-start-playing-button {
+  color: #223A5F;
+  background-color: #ffffff;
+  border-radius: 8px;
+  height: 35px;
+  width: 100px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  font-family: Bree Serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  margin-top: 10px;
+}
+@media (min-width: 768px) {
+  .cardFlip-start-playing-button {
+    font-size: 18px;
+    height: 50px;
+    width: 150px;
+  }
+}

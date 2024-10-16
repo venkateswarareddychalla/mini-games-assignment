@@ -1,0 +1,126 @@
+.wonOrLose-won-main-container {
+  background: linear-gradient(180deg, #a09aed 0%, #e0badb 100%);
+  min-height: 100vh;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .wonOrLose-won-main-container {
+    padding: 50px;
+  }
+}
+.wonOrLose-won-card-container {
+  background: #ffffff33;
+  border: 3.01px solid #ffffff30;
+  padding: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  border-radius: 12px;
+}
+@media (min-width: 768px) {
+  .wonOrLose-won-card-container {
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-left: 80px;
+  }
+}
+
+.wonOrLose-won-image {
+  width: 140px;
+  height: 182px;
+}
+@media (min-width: 768px) {
+  .wonOrLose-won-image {
+    order: 1;
+    width: 250px;
+    height: 400px;
+    align-self: flex-end;
+    margin-left: 20px;
+  }
+}
+.wonOrLose-won-description-container {
+}
+@media (min-width: 768px) {
+  .wonOrLose-won-description-container {
+    order: 0;
+    margin-right: 30px;
+    padding: 30px;
+    margin-bottom: 30px;
+  }
+}
+.wonOrLose-won-heading {
+  font-family: Roboto;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 48px;
+  text-align: center;
+  color: #334155;
+}
+@media (min-width: 768px) {
+  .wonOrLose-won-heading {
+    font-size: 48px;
+  }
+}
+.wonOrLose-won-score-text {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+  text-align: center;
+  color: #334155;
+  margin-bottom: 0px;
+}
+@media (min-width: 768px) {
+  .wonOrLose-won-score-text {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+}
+.wonOrLose-won-score-num {
+  font-family: Roboto;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 32px;
+  text-align: center;
+  color: #523fff;
+  margin-top: 0px;
+}
+@media (min-width: 768px) {
+  .wonOrLose-won-score-num {
+    font-size: 44px;
+  }
+}
+.wonOrLose-won-play-btn-container {
+  display: flex;
+  justify-content: center;
+}
+@media (min-width: 768px) {
+}
+.wonOrLose-won-play-again-btn {
+  background: #ffce27;
+  height: 35px;
+  width: 90px;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  text-align: center;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  /* margin-top: 20px; */
+}
+@media (min-width: 768px) {
+  .wonOrLose-won-play-again-btn {
+    height: 55px;
+    width: 150px;
+    font-size: 20px;
+  }
+}

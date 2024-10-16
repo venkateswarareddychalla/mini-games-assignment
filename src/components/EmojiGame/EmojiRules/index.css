@@ -1,0 +1,159 @@
+.emojiRules-main-container {
+  padding: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #a09aed 0%, #e0badb 100%);
+}
+@media (min-width: 768px) {
+  .emojiRules-main-container {
+    padding: 50px;
+  }
+}
+.emoji-leftArrow-backPara-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+@media (min-width: 768px) {
+}
+.emoji-back-button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding-top: 6px;
+}
+@media (min-width: 768px) {
+  .emoji-back-button {
+  }
+}
+.emoji-back-para {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  color: #334155;
+}
+@media (min-width: 768px) {
+  .emoji-back-para {
+    font-size: 24px;
+  }
+}
+.emoji-card-container {
+  border: 3px solid #ffffff30;
+  background: #ffffff33;
+  border-radius: 8px;
+  padding: 20px;
+}
+@media (min-width: 768px) {
+  .emoji-card-container {
+    padding: 30px;
+    border-radius: 12px;
+  }
+}
+.emojiImage-emojiGameHeading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 768px) {
+}
+.emoji-image {
+  height: 150px;
+  width: 150px;
+}
+@media (min-width: 768px) {
+  .emoji-image {
+    height: 200px;
+    width: 200px;
+  }
+}
+.emoji-game-heading {
+  font-family: Roboto;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 48px;
+  text-align: center;
+  color: #334155;
+}
+@media (min-width: 768px) {
+  .emoji-game-heading {
+    font-size: 44px;
+  }
+}
+.emoji-rulesHeading-ul-container {
+  padding: 15px;
+}
+@media (min-width: 768px) {
+  .emoji-rulesHeading-ul-container {
+    padding: 30px;
+  }
+}
+.emoji-rules-heading {
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  text-align: center;
+  color: #334155;
+}
+@media (min-width: 768px) {
+  .emoji-rules-heading {
+    font-size: 36px;
+  }
+}
+.emoji-rules-ul-container {
+  padding: 0px;
+}
+@media (min-width: 768px) {
+}
+.emoji-rules-list-item {
+  list-style: disc;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  color: #475569;
+  margin-bottom: 10px;
+}
+@media (min-width: 768px) {
+  .emoji-rules-list-item {
+    font-size: 24px;
+    margin-bottom: 20px;
+    line-height: 32px;
+  }
+}
+.emoji-start-play-btn-container {
+  text-align: center;
+  margin-top: 20px;
+}
+@media (min-width: 768px) {
+  .emoji-start-play-btn-container {
+    margin-top: 30px;
+  }
+}
+.emoji-start-playing-button {
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  color: #ffffff;
+  background-color: #334155;
+  border-radius: 8px;
+  height: 30px;
+  width: 100px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+@media (min-width: 768px) {
+  .emoji-start-playing-button {
+    font-size: 18px;
+    height: 50px;
+    width: 150px;
+  }
+}

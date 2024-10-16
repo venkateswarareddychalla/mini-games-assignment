@@ -1,0 +1,225 @@
+.container {
+  min-width: 320px;
+}
+.playEmojiGame-header-container {
+  background: #b5b0f0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+@media (min-width: 768px) {
+  .playEmojiGame-header-container {
+  }
+}
+.playEmojiGame-headerImage-heading-container {
+  display: flex;
+
+  align-items: center;
+  margin-left: 5px;
+}
+@media (min-width: 768px) {
+  .playEmojiGame-headerImage-heading-container {
+    margin-left: 30px;
+  }
+}
+.playEmojiGame-header-image {
+  height: 40px;
+  width: 40px;
+  margin-right: 10px;
+}
+@media (min-width: 768px) {
+  .playEmojiGame-header-image {
+    height: 50px;
+    width: 50px;
+    margin-right: 20px;
+  }
+}
+.playEmojiGame-header-heading {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: left;
+  color: #334155;
+}
+@media (min-width: 768px) {
+  .playEmojiGame-header-heading {
+    font-size: 28px;
+  }
+}
+
+.playEmojiGame-header-top-score {
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 26px;
+  text-align: left;
+  color: #334155;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+@media (min-width: 768px) {
+  .playEmojiGame-header-top-score {
+    font-size: 28px;
+  }
+}
+
+.playEmojiGame-header-score {
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 26px;
+  text-align: left;
+  color: #334155;
+  margin-right: 10px;
+}
+@media (min-width: 768px) {
+  .playEmojiGame-header-score {
+    font-size: 28px;
+    margin-right: 30px;
+  }
+}
+.playEmojiGame-main-game-container {
+  padding: 20px;
+  background: linear-gradient(180deg, #a09aed 0%, #e0badb 100%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 520px) {
+  .playEmojiGame-main-game-container {
+  }
+}
+@media (min-width: 768px) {
+  .playEmojiGame-main-game-container {
+    padding: 50px;
+  }
+}
+.playEmojiGame-rules-back-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+}
+@media (min-width: 768px) {
+  .playEmojiGame-rules-back-container {
+    margin-bottom: 30px;
+  }
+}
+
+.playEmojiGame-leftArrow-backPara-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.playEmojiGame-back-button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding-top: 6px;
+}
+.playEmojiGame-back-para {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  color: #334155;
+}
+@media (min-width: 768px) {
+  .playEmojiGame-emoji-back-para {
+    font-size: 24px;
+  }
+}
+.playEmojiGame-emoji-items-ul-container {
+  padding: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+@media (min-width: 520px) {
+  .playEmojiGame-emoji-items-ul-container {
+    max-width: 80%;
+  }
+}
+@media (min-width: 768px) {
+  .playEmojiGame-emoji-items-ul-container {
+    max-width: 80%;
+  }
+}
+@media (min-width: 950px) {
+  .playEmojiGame-emoji-items-ul-container {
+    max-width: 80%;
+  }
+}
+
+.playEmojiGame-emoji-list-item {
+  list-style-type: none;
+  background: #ffffff33;
+  border: 3px solid #ffffff30;
+  width: 27%;
+  height: 80px;
+  display: flex;
+  max-width: 150px;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
+  margin-bottom: 16px;
+  border-radius: 12px;
+}
+@media (min-width: 400px) {
+  .playEmojiGame-emoji-list-item {
+    width: 100px;
+    height: 90px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 768px) {
+  .playEmojiGame-emoji-list-item {
+    width: 140px;
+    height: 120px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 950px) {
+  .playEmojiGame-emoji-list-item {
+    height: 130px;
+    width: 150px;
+    max-width: 500px;
+  }
+}
+.playEmojiGame-emoji-list-btn {
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  border: none;
+}
+@media (min-width: 768px) {
+}
+.playEmojiGame-emoji-list-item-image {
+  height: 40px;
+  width: 40px;
+}
+@media (min-width: 400px) {
+  .playEmojiGame-emoji-list-item-image {
+    height: 50px;
+    width: 50px;
+  }
+}
+@media (min-width: 768px) {
+  .playEmojiGame-emoji-list-item-image {
+    height: 60px;
+    width: 60px;
+  }
+}
+@media (min-width: 950px) {
+  .playEmojiGame-emoji-list-item-image {
+    height: 80px;
+    width: 80px;
+  }
+}

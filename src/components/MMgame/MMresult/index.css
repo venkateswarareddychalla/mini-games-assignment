@@ -1,0 +1,122 @@
+.mmResult-main-container {
+  height: 100vh;
+  padding: 20px;
+  background-color: #1a202c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.mmResult-emoji-list-item,
+.mmResult-level-list-item {
+  list-style-type: none;
+}
+.mmResult-emojies-ul-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  margin-bottom: 0px;
+}
+@media (min-width: 768px) {
+  .mmResult-emojies-ul-container {
+    margin-bottom: 10px;
+  }
+}
+.mmResult-levels-ul-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  margin-top: 0px;
+}
+@media (min-width: 768px) {
+  .mmResult-levels-ul-container {
+  }
+}
+.mmResult-level-text {
+  font-family: Bree Serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: left;
+  color: #ffffff;
+}
+@media (min-width: 768px) {
+  .mmResult-level-text {
+  }
+}
+.mmResult-congrats-text {
+  font-family: Bree Serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: center;
+  color: #467aff;
+  margin-bottom: 0px;
+}
+@media (min-width: 768px) {
+  .mmResult-congrats-text {
+    font-size: 36px;
+  }
+}
+.mmResult-reached-level-text {
+  font-family: Bree Serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 8px;
+  margin-bottom: 30px;
+}
+@media (min-width: 768px) {
+  .mmResult-reached-level-text {
+    font-size: 26px;
+    margin-top: 20px;
+    word-spacing: 5px;
+  }
+}
+.mmResult-play-again-btn {
+  font-family: Bree Serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: center;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  height: 35px;
+  width: 90px;
+  background-color: #467aff;
+  border-radius: 8px;
+}
+@media (min-width: 768px) {
+  .mmResult-play-again-btn {
+    height: 40px;
+    width: 120px;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+}
+.mmResult-top-container {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .mmResult-top-container {
+    width: 50%;
+  }
+}
+.mmResult-emoji-image {
+  height: 20px;
+  width: 20px;
+}
+@media (min-width: 768px) {
+  .mmResult-emoji-image {
+    height: 30px;
+    width: 30px;
+  }
+}

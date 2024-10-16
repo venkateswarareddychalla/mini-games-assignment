@@ -1,0 +1,116 @@
+.playRPSgame-main-game-container {
+  padding: 20px;
+  background: #223a5f;
+  min-height: 100vh;
+}
+@media (min-width: 768px) {
+  .playRPSgame-main-game-container {
+    padding: 50px;
+  }
+}
+.playRPSgame-rules-back-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (min-width: 768px) {
+}
+
+.playRPSgame-leftArrow-backPara-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.playRPSgame-back-button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding-top: 6px;
+}
+.playRPSgame-back-para {
+  font-family: 'Bree Serif';
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  color: #ffffff;
+}
+@media (min-width: 768px) {
+  .playRPSgame-emoji-back-para {
+    font-size: 24px;
+  }
+}
+.playRPSgame-game-heading {
+  font-family: Bree Serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 50px;
+  margin-top: 20px;
+  word-spacing: 20px;
+}
+@media (min-width: 768px) {
+  .playRPSgame-game-heading {
+    font-size: 36px;
+  }
+}
+.playRPSgame-heading {
+  font-family: Bree Serif;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 48px;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+@media (min-width: 768px) {
+  .playRPSgame-heading {
+    font-size: 44px;
+  }
+}
+.playRPSgame-description-container {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 768px) {
+}
+.playRPSgame-ul-container {
+  padding: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+@media (min-width: 768px) {
+}
+.playRPSgame-list-item {
+  list-style-type: none;
+  width: 45%;
+  display: flex;
+  justify-content: center;
+}
+@media (min-width: 768px) {
+}
+
+.playRPSgame-list-btn {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+}
+.playRPSgame-list-image {
+  height: 120px;
+  width: 120px;
+}
+@media (min-width: 768px) {
+  .playRPSgame-list-image {
+    height: 150px;
+    width: 150px;
+  }
+}

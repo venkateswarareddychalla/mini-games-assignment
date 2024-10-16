@@ -1,0 +1,161 @@
+.rpsRules-main-container {
+  padding: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  min-height: 100vh;
+  background: #223a5f;
+}
+@media (min-width: 768px) {
+  .rpsRules-main-container {
+    padding: 50px;
+  }
+}
+.rps-leftArrow-backPara-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+@media (min-width: 768px) {
+}
+.rps-back-button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding-top: 6px;
+}
+@media (min-width: 768px) {
+  .rps-back-button {
+  }
+}
+.rps-back-para {
+  font-family: Bree Serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #ffffff;
+}
+@media (min-width: 768px) {
+  .rps-back-para {
+    font-size: 24px;
+  }
+}
+.rps-card-container {
+  background: transparent;
+  /* padding: 20px; */
+}
+@media (min-width: 768px) {
+  .rps-card-container {
+    padding: 30px;
+    border-radius: 12px;
+  }
+}
+.rpsImage-rpsGameHeading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 768px) {
+}
+.rps-image {
+  height: 180px;
+  width: 210px;
+}
+@media (min-width: 768px) {
+  .rps-image {
+    height: 200px;
+    width: 200px;
+  }
+}
+.rps-game-heading {
+  color: #ffffff;
+  font-family: Bree Serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: center;
+  word-spacing: 10px;
+}
+@media (min-width: 768px) {
+  .rps-game-heading {
+    font-size: 44px;
+  }
+}
+.rps-rulesHeading-ul-container {
+  padding: 15px;
+}
+@media (min-width: 768px) {
+  .rps-rulesHeading-ul-container {
+    padding: 30px;
+  }
+}
+.rps-rules-heading {
+  font-family: Bree Serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+@media (min-width: 768px) {
+  .rps-rules-heading {
+    font-size: 36px;
+  }
+}
+.rps-rules-ul-container {
+  padding: 0px;
+}
+@media (min-width: 768px) {
+}
+.rps-rules-list-item {
+  list-style: disc;
+
+  color: #ffffff;
+  margin-bottom: 10px;
+
+  font-family: Bree Serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
+@media (min-width: 768px) {
+  .rps-rules-list-item {
+    font-size: 24px;
+    margin-bottom: 20px;
+    line-height: 32px;
+  }
+}
+.rps-start-play-btn-container {
+  text-align: center;
+  margin-top: 20px;
+}
+@media (min-width: 768px) {
+  .rps-start-play-btn-container {
+    margin-top: 30px;
+  }
+}
+.rps-start-playing-button {
+  color: #223a5f;
+  background-color: #ffffff;
+  border-radius: 8px;
+  height: 30px;
+  width: 100px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  font-family: Bree Serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+@media (min-width: 768px) {
+  .rps-start-playing-button {
+    font-size: 18px;
+    height: 50px;
+    width: 150px;
+  }
+}
