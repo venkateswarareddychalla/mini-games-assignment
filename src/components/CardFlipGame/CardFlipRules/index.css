@@ -172,7 +172,7 @@
   padding-top: 20px;
   padding-bottom: 20px;
   min-height: 100vh;
-  background: #14332E;
+  background: #14332e;
 }
 @media (min-width: 768px) {
   .cardFlipRules-main-container {
@@ -180,8 +180,9 @@
   }
 }
 .cardFlip-leftArrow-backPara-container {
+  border: 1px solid red;
   display: flex;
-  flex-direction: row;
+  justify-content: flex-start;
   align-items: center;
 }
 @media (min-width: 768px) {
@@ -309,7 +310,7 @@
   }
 }
 .cardFlip-start-playing-button {
-  color: #223A5F;
+  color: #223a5f;
   background-color: #ffffff;
   border-radius: 8px;
   height: 35px;

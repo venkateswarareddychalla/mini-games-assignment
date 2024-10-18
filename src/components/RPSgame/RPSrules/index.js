@@ -4,7 +4,9 @@ import {BiArrowBack} from 'react-icons/bi'
 
 import PlayRPSgame from '../PlayRPSgame'
 
-import ExitPopup from '../../ExitPopup'
+import {withRouter} from 'react-router-dom'
+
+// import ExitPopup from '../../ExitPopup'
 
 import './index.css'
 
@@ -15,6 +17,11 @@ class RPSrules extends Component {
     this.setState({startedPlaying: true})
   }
 
+  onClickExit = () => {
+    const {history} = this.props
+    history.replace('/')
+  }
+
   render() {
     const {startedPlaying} = this.state
     return (
@@ -22,11 +29,14 @@ class RPSrules extends Component {
         {!startedPlaying && (
           <div className="rpsRules-main-container">
             <div className="rps-leftArrow-backPara-container">
-              <ExitPopup>
-                <button className="rps-back-button" type="button">
-                  <BiArrowBack size={28} color="#FFFFFF" aria-label="back" />
-                </button>
-              </ExitPopup>
+              <button
+                onClick={this.onClickExit}
+                className="rps-back-button"
+                type="button"
+              >
+                <BiArrowBack size={28} color="#FFFFFF" aria-label="back" />
+              </button>
+
               <p className="rps-back-para">Back</p>
             </div>
             <div className="rps-card-container">
@@ -85,4 +95,4 @@ class RPSrules extends Component {
   }
 }
 
-export default RPSrules
+export default withRouter(RPSrules)

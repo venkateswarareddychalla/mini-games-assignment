@@ -6,7 +6,9 @@ import RPSrulesPopup from '../RPSrulesPopup'
 
 import RPSwinDrawLose from '../RPSwinDrawLose'
 
-import ExitPopup from '../../ExitPopup'
+import {withRouter} from 'react-router-dom'
+
+// import ExitPopup from '../../ExitPopup'
 
 import './index.css'
 
@@ -106,17 +108,25 @@ class PlayRPSgame extends Component {
     this.setState({gameInProgress: true})
   }
 
+  onClickExit = () => {
+    const {history} = this.props
+    history.replace('/')
+  }
+
   renderPlayRPSgameDetails = () => {
     const {gameInProgress} = this.state
     return (
       <div className="playRPSgame-main-game-container">
         <div className="playRPSgame-rules-back-container">
           <div className="playRPSgame-leftArrow-backPara-container">
-            <ExitPopup>
-              <button className="playRPSgame-back-button" type="button">
-                <BiArrowBack size={28} color="#FFFFFF" aria-label="back" />
-              </button>
-            </ExitPopup>
+            <button
+              onClick={this.onClickExit}
+              className="playRPSgame-back-button"
+              type="button"
+            >
+              <BiArrowBack size={28} color="#FFFFFF" aria-label="back" />
+            </button>
+
             <p className="playRPSgame-back-para">Back</p>
           </div>
           <RPSrulesPopup />
@@ -194,4 +204,4 @@ class PlayRPSgame extends Component {
   }
 }
 
-export default PlayRPSgame
+export default withRouter(PlayRPSgame)

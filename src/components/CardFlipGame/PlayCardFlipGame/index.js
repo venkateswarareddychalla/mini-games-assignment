@@ -2,13 +2,14 @@ import React, {Component} from 'react'
 
 import {BiArrowBack} from 'react-icons/bi'
 
+// import {v4 as uuidv4} from 'uuid'
 import ResultCardFlipGame from '../ResultCardFlipGame'
 
 import CardFlipRulesPopup from '../CardFlipRulesPopup'
 
-import ExitPopup from '../../ExitPopup'
+import {withRouter} from 'react-router-dom'
 
-import {v4 as uuidv4} from 'uuid'
+// import ExitPopup from '../../ExitPopup'
 
 import './index.css'
 
@@ -167,6 +168,11 @@ class PlayCardFlipGame extends Component {
     }
   }
 
+  onClickExit = () => {
+    const {history} = this.props
+    history.replace('/')
+  }
+
   render() {
     const {
       shuffledCards,
@@ -185,11 +191,14 @@ class PlayCardFlipGame extends Component {
       <div className="playMMgame-main-game-container">
         <div className="playMMgame-rules-back-container">
           <div className="playMMgame-leftArrow-backPara-container">
-            <ExitPopup>
-              <button className="playMMgame-back-button" type="button">
-                <BiArrowBack size={28} color="#FFFFFF" aria-label="back" />
-              </button>
-            </ExitPopup>
+            <button
+              onClick={this.onClickExit}
+              className="playMMgame-back-button"
+              type="button"
+            >
+              <BiArrowBack size={28} color="#FFFFFF" aria-label="back" />
+            </button>
+
             <p className="playMMgame-back-para">Back</p>
           </div>
           <CardFlipRulesPopup />
@@ -212,7 +221,6 @@ class PlayCardFlipGame extends Component {
               <ul className="cards-grid">
                 {shuffledCards.map((card, index) => (
                   <li
-                    key={uuidv4()}
                     className={`card ${
                       flippedCards.includes(index) ||
                       matchedCards.includes(index)
@@ -257,4 +265,4 @@ class PlayCardFlipGame extends Component {
   }
 }
 
-export default PlayCardFlipGame
+export default withRouter(PlayCardFlipGame)

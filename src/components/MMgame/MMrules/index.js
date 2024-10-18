@@ -4,7 +4,9 @@ import {BiArrowBack} from 'react-icons/bi'
 
 import PlayMMgame from '../PlayMMgame'
 
-import ExitPopup from '../../ExitPopup'
+import {withRouter} from 'react-router-dom'
+
+// import ExitPopup from '../../ExitPopup'
 
 import './index.css'
 
@@ -15,18 +17,28 @@ class MMrules extends Component {
     this.setState({startedPlaying: true})
   }
 
+  onClickExit = () => {
+    const {history} = this.props
+    history.replace('/')
+  }
+
   render() {
     const {startedPlaying} = this.state
     return (
       <>
-        {!startedPlaying && (
+        {startedPlaying ? (
+          <PlayMMgame />
+        ) : (
           <div className="mmRules-main-container">
             <div className="mm-leftArrow-backPara-container">
-              <ExitPopup>
-                <button className="mm-back-button" type="button">
-                  <BiArrowBack size={28} color="#FFFFFF" aria-label="back" />
-                </button>
-              </ExitPopup>
+              <button
+                onClick={this.onClickExit}
+                className="mm-back-button"
+                type="button"
+              >
+                <BiArrowBack size={28} color="#FFFFFF" aria-label="back" />
+              </button>
+
               <p className="mm-back-para">Back</p>
             </div>
             <div className="mm-card-container">
@@ -88,10 +100,9 @@ class MMrules extends Component {
             </div>
           </div>
         )}
-        {startedPlaying && <PlayMMgame />}
       </>
     )
   }
 }
 
-export default MMrules
+export default withRouter(MMrules)

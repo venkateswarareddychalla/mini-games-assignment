@@ -6,7 +6,8 @@ import EmojiRulesPopup from '../EmojiRulesPopup'
 
 import EmojiWonOrLose from '../EmojiWonOrLose'
 
-import ExitPopup from '../../ExitPopup'
+import {withRouter} from 'react-router-dom'
+// import ExitPopup from '../../ExitPopup'
 
 import './index.css'
 
@@ -110,10 +111,8 @@ class PlayEmojiGame extends Component {
     )
     if (gettingScoreFromLocalStorage === null) {
       localStorage.setItem('score', JSON.stringify(score))
-    } else {
-      if (score > gettingScoreFromLocalStorage) {
-        localStorage.setItem('score', JSON.stringify(score))
-      }
+    } else if (score > gettingScoreFromLocalStorage) {
+      localStorage.setItem('score', JSON.stringify(score))
     }
 
     return (
@@ -140,17 +139,25 @@ class PlayEmojiGame extends Component {
     )
   }
 
+  onClickExit = () => {
+    const {history} = this.props
+    history.replace('/')
+  }
+
   renderMainGameDetails = () => {
     const updatedEmojisList = emojisList.sort(() => Math.random() - 0.5)
     return (
       <div className="playEmojiGame-main-game-container">
         <div className="playEmojiGame-rules-back-container">
           <div className="playEmojiGame-leftArrow-backPara-container">
-            <ExitPopup>
-              <button className="playEmojiGame-back-button" type="button">
-                <BiArrowBack size={28} color="#334155" aria-label="back" />
-              </button>
-            </ExitPopup>
+            <button
+              onClick={this.onClickExit}
+              className="playEmojiGame-back-button"
+              type="button"
+            >
+              <BiArrowBack size={28} color="#334155" aria-label="back" />
+            </button>
+
             <p className="playEmojiGame-back-para">Back</p>
           </div>
           <EmojiRulesPopup />
@@ -198,4 +205,4 @@ class PlayEmojiGame extends Component {
   }
 }
 
-export default PlayEmojiGame
+export default withRouter(PlayEmojiGame)

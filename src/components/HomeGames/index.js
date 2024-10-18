@@ -2,7 +2,7 @@ import './index.css'
 
 import {Link, withRouter} from 'react-router-dom'
 
-import {v4 as uuidv4} from 'uuid'
+// import {v4 as uuidv4} from 'uuid'
 
 const HomeGames = props => {
   const {history} = props
@@ -24,7 +24,7 @@ const HomeGames = props => {
     <div className="main-container">
       <h1 className="games-heading">Games</h1>
       <ul className="games-ul-container">
-        <li key={uuidv4()} className="list-item" onClick={onClickEmojiGame}>
+        <li className="list-item" onClick={onClickEmojiGame}>
           <img
             className="image"
             src="https://res.cloudinary.com/dykjwqjqi/image/upload/v1724940341/xa1gzddfj7lcybzecas3.png"
@@ -32,25 +32,21 @@ const HomeGames = props => {
           />
           <p className="paragraph">Emoji Game</p>
         </li>
-        <li key={uuidv4()} className="list-item" onClick={onClickMemoryMatrix}>
+        <li className="list-item" onClick={onClickMemoryMatrix}>
           <p className="paragraph">Memory Matrix</p>
           <img
             className="image"
             src="https://res.cloudinary.com/dykjwqjqi/image/upload/v1724941161/hphggvqti4uxtbtmsyfm.png"
           />
         </li>
-        <li key={uuidv4()} className="list-item" onClick={onClickRPS}>
+        <li className="list-item" onClick={onClickRPS}>
           <p className="paragraph">ROCK PAPER SCISSOR</p>
           <img
             className="image"
             src="https://res.cloudinary.com/dykjwqjqi/image/upload/v1724941583/osgbqu7ie57rafyzkklf.png"
           />
         </li>
-        <li
-          key={uuidv4()}
-          className="list-item"
-          onClick={onClickCardFlipMemory}
-        >
+        <li className="list-item" onClick={onClickCardFlipMemory}>
           <p className="paragraph">Card-Flip Memory Game</p>
           <img
             className="image"

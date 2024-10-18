@@ -12,8 +12,6 @@ dependencies:
   react-icons: 4.3.1_react@17.0.1
   react-modal: 3.14.3_react-dom@17.0.1+react@17.0.1
   react-router-dom: 5.3.0_react@17.0.1
-  reactjs-popup: 2.0.6_react-dom@17.0.1+react@17.0.1
-  uuid: 10.0.0
 devDependencies:
   eslint-config-airbnb: 18.2.1
   eslint-config-prettier: 8.1.0
@@ -10941,18 +10939,6 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha512-lG9c9UuMHdcAexXtigOZLX8exLWkW0Ku29qPRU8uhF2R9BN96dLCt0psvzPLlHc5OWkgymP3qwTRgbnw5BKx3w==
-  /reactjs-popup/2.0.6_react-dom@17.0.1+react@17.0.1:
-    dependencies:
-      react: 17.0.1
-      react-dom: 17.0.1_react@17.0.1
-    dev: false
-    engines:
-      node: '>=10'
-    peerDependencies:
-      react: '>=16'
-      react-dom: '>=16'
-    resolution:
-      integrity: sha512-A+tt+x9wdgZiZjv0e2WzYLD3IfFwJALaRaqwrCSXGjo0iQdsry/EtBEbQXRSmQs7cHmOi5eytCiSlOm8k4C+dg==
   /read-pkg-up/3.0.0:
     dependencies:
       find-up: 2.1.0
@@ -12960,11 +12946,6 @@ packages:
       node: '>= 0.4.0'
     resolution:
       integrity: sha1-n5VxD1CiZ5R7LMwSR0HBAoQn5xM=
-  /uuid/10.0.0:
-    dev: false
-    hasBin: true
-    resolution:
-      integrity: sha512-8XkAphELsDnEGrDxUOHB3RGvXz6TeuYSGEZBOjtTtPm2lwhGBjLgOzLHB63IUWfBpNucQjND6d3AOudO+H3RWQ==
   /uuid/3.4.0:
     deprecated: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
     dev: true
@@ -13641,5 +13622,3 @@ specifiers:
   react-modal: 3.14.3
   react-router-dom: 5.3.0
   react-scripts: 4.0.3
-  reactjs-popup: 2.0.6
-  uuid: 10.0.0

@@ -1,12 +1,12 @@
 import {Component} from 'react'
 
-import {Link} from 'react-router-dom'
+import {Link, withRouter} from 'react-router-dom'
 
 import {BiArrowBack} from 'react-icons/bi'
 
 import PlayEmojiGame from '../PlayEmojiGame'
 
-import ExitPopup from '../../ExitPopup'
+// import ExitPopup from '../../ExitPopup'
 
 import './index.css'
 
@@ -17,18 +17,27 @@ class EmojiRules extends Component {
     this.setState({startedPlaying: true})
   }
 
+  onClickExit = () => {
+    const {history} = this.props
+    history.replace('/')
+  }
+
   render() {
     const {startedPlaying} = this.state
     return (
       <>
-        {!startedPlaying && (
+        {startedPlaying ? (
+          <PlayEmojiGame para={<p>hello</p>} />
+        ) : (
           <div className="emojiRules-main-container">
             <div className="emoji-leftArrow-backPara-container">
-              <ExitPopup>
-                <button className="emoji-back-button" type="button">
-                  <BiArrowBack size={28} color="#334155" aria-label="back" />
-                </button>
-              </ExitPopup>
+              <button
+                onClick={this.onClickExit}
+                className="emoji-back-button"
+                type="button"
+              >
+                <BiArrowBack size={28} color="#334155" aria-label="back" />
+              </button>
 
               <p className="emoji-back-para">Back</p>
             </div>
@@ -82,10 +91,9 @@ class EmojiRules extends Component {
             </div>
           </div>
         )}
-        {startedPlaying && <PlayEmojiGame para={<p>hello</p>} />}
       </>
     )
   }
 }
 
-export default EmojiRules
+export default withRouter(EmojiRules)

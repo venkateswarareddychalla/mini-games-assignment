@@ -101,4 +101,3 @@ const CardFlipRulesPopup = () => {
 }
 
 export default CardFlipRulesPopup
-

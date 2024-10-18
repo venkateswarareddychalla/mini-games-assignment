@@ -4,7 +4,9 @@ import {BiArrowBack} from 'react-icons/bi'
 
 import PlayCardFlipGame from '../PlayCardFlipGame'
 
-import ExitPopup from '../../ExitPopup'
+import {withRouter} from 'react-router-dom'
+
+// import ExitPopup from '../../ExitPopup'
 
 import './index.css'
 
@@ -15,18 +17,28 @@ class CardFlipRules extends Component {
     this.setState({startedPlaying: true})
   }
 
+  onClickExit = () => {
+    const {history} = this.props
+    history.replace('/')
+  }
+
   render() {
     const {startedPlaying} = this.state
     return (
       <>
-        {!startedPlaying && (
+        {startedPlaying ? (
+          <PlayCardFlipGame />
+        ) : (
           <div className="cardFlipRules-main-container">
             <div className="cardFlip-leftArrow-backPara-container">
-              <ExitPopup>
-                <button className="cardFlip-back-button" type="button">
-                  <BiArrowBack size={28} color="#FFFFFF" aria-label="back" />
-                </button>
-              </ExitPopup>
+              <button
+                onClick={this.onClickExit}
+                className="cardFlip-back-button"
+                type="button"
+              >
+                <BiArrowBack size={28} color="#FFFFFF" aria-label="back" />
+              </button>
+
               <p className="cardFlip-back-para">Back</p>
             </div>
             <div className="cardFlip-card-container">
@@ -84,10 +96,9 @@ class CardFlipRules extends Component {
             </div>
           </div>
         )}
-        {startedPlaying && <PlayCardFlipGame />}
       </>
     )
   }
 }
 
-export default CardFlipRules
+export default withRouter(CardFlipRules)

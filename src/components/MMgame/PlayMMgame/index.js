@@ -2,13 +2,14 @@ import React, {Component} from 'react'
 
 import {BiArrowBack} from 'react-icons/bi'
 
+// import {v4 as uuidv4} from 'uuid'
 import MMrulesPopup from '../MMrulesPopup'
 
 import MMresult from '../MMresult'
 
-import ExitPopup from '../../ExitPopup'
+import {withRouter} from 'react-router-dom'
 
-import {v4 as uuidv4} from 'uuid'
+// import ExitPopup from '../../ExitPopup'
 
 import './index.css'
 
@@ -126,13 +127,13 @@ class PlayMMgame extends Component {
         boxClass += ' selected' // Highlight correct selections
       }
       boxes.push(
-        <li className="box-list-item" key={uuidv4()}>
+        <li className="box-list-item">
           <button
             data-testid={dataTestId}
             onClick={() => this.handleBoxClick(i)}
             className={boxClass}
           >
-            <div></div>
+            <div />
           </button>
         </li>,
       )
@@ -141,17 +142,24 @@ class PlayMMgame extends Component {
     return boxes
   }
 
+  onClickExit = () => {
+    const {history} = this.props
+    history.replace('/')
+  }
+
   renderplayMMgameDetails = () => {
     const {level, gridSize} = this.state
     return (
       <div className="playMMgame-main-game-container">
         <div className="playMMgame-rules-back-container">
           <div className="playMMgame-leftArrow-backPara-container">
-            <ExitPopup>
-              <button className="playMMgame-back-button" type="button">
-                <BiArrowBack size={28} color="#FFFFFF" aria-label="back" />
-              </button>
-            </ExitPopup>
+            <button
+              onClick={this.onClickExit}
+              className="playMMgame-back-button"
+              type="button"
+            >
+              <BiArrowBack size={28} color="#FFFFFF" aria-label="back" />
+            </button>
             <p className="playMMgame-back-para">Back</p>
           </div>
           <MMrulesPopup />
@@ -186,4 +194,4 @@ class PlayMMgame extends Component {
   }
 }
 
-export default PlayMMgame
+export default withRouter(PlayMMgame)
